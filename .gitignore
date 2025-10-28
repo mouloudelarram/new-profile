@@ -1,0 +1,11 @@
+node_modules/
+.next/
+/.env
+dist/
+coverage/
+*.log
+.DS_Store
+/.vercel
+build/
+npm-debug.log
+package-lock.json

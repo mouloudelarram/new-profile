@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <rect width="100%" height="100%" fill="#0ea5ff" opacity="0.06" />
+  <g stroke="#0b0b0c" stroke-opacity="0.12" stroke-width="2">
+    <path d="M20 80h360" />
+    <path d="M20 160h360" />
+    <path d="M20 240h360" />
+    <path d="M20 320h360" />
+    <path d="M80 20v360" />
+    <path d="M160 20v360" />
+    <path d="M240 20v360" />
+    <path d="M320 20v360" />
+  </g>
+  <circle cx="300" cy="100" r="36" fill="#0ea5ff" opacity="0.16" />
+  <rect x="60" y="60" width="120" height="80" rx="6" fill="#0b0b0c" opacity="0.06" />
+</svg>
