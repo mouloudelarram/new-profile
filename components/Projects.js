@@ -2,7 +2,7 @@ const PROJECTS = [
   {
     title: 'Abeille Assurances — Backend & Frontend',
     role: 'Software Engineer',
-    thumb: '/projects/abeille.svg',
+    thumb: './projects/abeille.svg',
     problem: 'Support high-volume insurance platform serving millions of users with secure, scalable features.',
     approach: 'Developed backend services with Spring Boot and responsive frontends with Angular; automated pipelines with Jenkins and applied secure coding practices.',
     outcome: 'Delivered scalable features in CI/CD environment for 3.1M+ users, improved release velocity and reduced vulnerabilities through code reviews and Veracode.',
@@ -11,7 +11,7 @@ const PROJECTS = [
   {
     title: 'Price Prediction Model (dpointgroup)',
     role: 'Machine Learning Engineer',
-    thumb: '/projects/price-model.svg',
+    thumb: './projects/price-model.svg',
     problem: 'Improve accuracy of accommodation price predictions.',
     approach: 'Built a supervised regression model, performed preprocessing with NumPy/Pandas and tuned model hyperparameters.',
     outcome: 'Achieved a ~4.2% improvement in prediction accuracy over baseline.',
@@ -20,7 +20,7 @@ const PROJECTS = [
   {
     title: 'BROKER (BIG4COM)',
     role: 'Full-stack Engineer',
-    thumb: '/projects/broker.svg',
+    thumb: './projects/broker.svg',
     problem: 'Build a mobile/web platform for accommodation rentals and taxi bookings.',
     approach: 'Implemented mobile front-end in Flutter and back-end services with Symfony; integrated secure network communication and delivered production-ready features.',
     outcome: 'Launched a multi-platform product showcased at Innovation City Marrakech.',
@@ -29,7 +29,7 @@ const PROJECTS = [
   {
     title: 'Samabcom — E-commerce',
     role: 'Software Developer',
-    thumb: '/projects/samabcom.svg',
+    thumb: './projects/samabcom.svg',
     problem: 'Create an e-commerce presence and responsive company website.',
     approach: 'Built website with HTML/CSS/JS and an e-commerce back-end using Symfony 4 and SQL database.',
     outcome: 'Delivered a responsive site and full-stack e-commerce application to improve digital presence.',

@@ -21,7 +21,7 @@ export default function Hero() {
         </div>
 
         <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }} className="hidden md:flex justify-center">
-          <img src="/hero-graphic.svg" alt="architectural digital grid" className="w-80 h-80 object-contain shadow-lg rounded-md" />
+          <img src="./hero-graphic.svg" alt="architectural digital grid" className="w-80 h-80 object-contain shadow-lg rounded-md" />
         </motion.div>
       </div>
     </section>
