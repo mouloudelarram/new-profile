@@ -1,10 +1,9 @@
-name: Build and deploy to GitHub Pages
+name: Build and Deploy to GitHub Pages
 
 on:
   push:
     branches:
-      - main
-  workflow_dispatch:
+      - clean/merge
 
 permissions:
   contents: read
@@ -14,36 +13,30 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20.19.0'
+          cache: 'npm'
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Build and export (produce ./out)
-        # `npm run deploy` in this project runs `next build && next export`
-        run: npm run deploy
+      - name: Build
+        run: npm run build
 
-      - name: Upload artifact for GitHub Pages
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ./dist
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    permissions: # minimal permissions for the deploy step
-      pages: write
     steps:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
